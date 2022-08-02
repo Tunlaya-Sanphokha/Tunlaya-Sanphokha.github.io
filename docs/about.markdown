@@ -1,6 +1,6 @@
 ---
-layout: page
-title: Abou1
+layout: pag1
+title: 
 permalink: /about/
 ---
 
