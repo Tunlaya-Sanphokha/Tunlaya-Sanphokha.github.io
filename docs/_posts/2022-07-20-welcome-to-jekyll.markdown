@@ -1,8 +1,8 @@
 ---
-layout: ![137631409_3655718301213663_5053512618541350693_n](https://user-images.githubusercontent.com/69080191/182429855-165a6158-b71a-4a76-8394-35ff14ea4769.jpg)
+layout:
 
-title:  "Welcome to Jekyll!"
-date:   2022-07-20 20:32:46 +0700
+title:  
+date: 
 categories: jekyll update
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
