@@ -27,7 +27,7 @@ email: s6201012620341@email.kmutnb.ac.th
 #baseurl: "" # the subpath of your site, e.g. /blog
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
-github_username:  https://github.com/Tunlaya-Sanphokha
+github_username:  "Tunlaya-Sanphokha"
 theme: minima
 #plugins:
   #- jekyll-feed
