@@ -1,6 +1,6 @@
 ---
-#layout: 
-#title: 
+layout: 
+title: 
 permalink: 
 ---
 
