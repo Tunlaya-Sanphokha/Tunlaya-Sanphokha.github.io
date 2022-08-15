@@ -17,4 +17,4 @@
 
 
 # My Project
-## Assigment 1 : [Linux Tutorial](https://tunlaya-sanphokha.github.io/testLinux.html)
+### Basic Linux Command [Linux Tutorial](https://tunlaya-sanphokha.github.io/testLinux.html)
