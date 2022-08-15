@@ -4,7 +4,7 @@ title: Linux Tutorial
 ---
 ## Basic Terminal Commands in Linux Ubuntu
 
-I have learned and practiced using the command line from [tutorialspoint](https://www.tutorialspoint.com/unix/unix-useful-commands.htm)
+#### I have learned and practiced using the command line from [tutorialspoint](https://www.tutorialspoint.com/unix/unix-useful-commands.htm)
 
 #### ls is command for showing list of item in directory.
 
