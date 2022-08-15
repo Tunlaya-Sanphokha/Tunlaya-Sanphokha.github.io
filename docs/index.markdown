@@ -17,4 +17,4 @@
 
 
 # My Project
-## Assigment 1 : [Linux Tutorial](https://Tunlaya-Sanphokha.github.io/docs/Linux_Tutorial.html)
+## Assigment 1 : [Linux Tutorial](https://tunlaya-sanphokha.github.io/docs/Linux_Tutorial.html)
