@@ -14,3 +14,7 @@
 #### Email : s6201012620341@email.kmutnb.ac.th
 #### GitHub : Tunlaya-Sanphokha
 [This is my GitHub | CLICK HERE](https://github.com/Tunlaya-Sanphokha)
+
+
+# My Project
+## Assigment 1 : [Linux Tutorial](https://Tunlaya-Sanphokha.github.io/docs/Linux_Tutorial.html)
