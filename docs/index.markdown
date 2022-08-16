@@ -17,4 +17,4 @@
 
 
 # My Project
-### Basic Linux Command [Linux Tutorial](https://tunlaya-sanphokha.github.io/Linux_Tutorial.html)
+## Basic Linux Command [Linux Tutorial](https://tunlaya-sanphokha.github.io/Linux_Tutorial.html)
