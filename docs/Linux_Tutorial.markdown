@@ -8,7 +8,7 @@ title: Linux Tutorial
 
 #### ls is command for showing list of item in directory.
 <p align="center">
-  <img src="/docs/photo/HW1_Linux/1.ls.PNG" alt="1.ls" width="700" height="500"/>
+  <img src="photo/HW1_Linux/1.ls.PNG" alt="1.ls" width="700" height="500"/>
 </p>
 
 
