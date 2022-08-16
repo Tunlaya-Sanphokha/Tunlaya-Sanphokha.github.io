@@ -7,6 +7,10 @@ title: Linux Tutorial
 #### I have learned and practiced using the command line from [tutorialspoint](https://www.tutorialspoint.com/unix/unix-useful-commands.htm)
 
 #### ls is command for showing list of item in directory.
+<p align="center">
+  <img src="/docs/photo/HW1_Linux/1.ls.png" alt="1.ls" width="700" height="600"/>
+</p>
+
 
 
 #### pwd command is an abbreviation of "print working directory"
