@@ -18,4 +18,4 @@
 
 # My Project
 ## Basic Linux Command [Linux Tutorial](https://tunlaya-sanphokha.github.io/Linux_Tutorial.html)
-## Practice [Arduino Programming Problems](https://tunlaya-sanphokha.github.io/Arduino.html)
+## Practice [Arduino Programming Problems C/C++](https://tunlaya-sanphokha.github.io/Arduino.html)
