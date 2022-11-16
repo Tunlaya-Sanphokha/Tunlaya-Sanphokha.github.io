@@ -203,4 +203,4 @@ delay(700);
 ```
 
 ### ตัวอย่างของ LED แต่ละ pattern
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4cIonyunK7k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GFpAgs1QM8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
