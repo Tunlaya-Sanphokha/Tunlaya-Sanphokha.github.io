@@ -1,1 +1,56 @@
-## Install/run Mosquitto broker using Linux VM (Ubuntu or Rapbian OS distro)
+## Install/run Mosquitto broker using Linux VM (Ubuntu or Rapbian OS distro) 
+##### เว็บที่ใช้อ้างอิงครั้งนี้ [CLICK](https://randomnerdtutorials.com/how-to-install-mosquitto-broker-on-raspberry-pi/)
+##### คำสั่ง sudo apt update && sudo apt upgrade เพื่อทำการ update และ upgrade system
+<p align="center">
+  <img src="photo/2_1/1.PNG" alt="1" width="800" height="400"/>
+</p>
+
+##### คำสั่ง sudo apt install -y mosquitto mosquitto-clients เพื่อติดตั้ง Mosquitto-clients
+
+<p align="center">
+  <img src="photo/2_1/2.PNG" alt="2" width="800" height="400"/>
+</p>
+
+##### คำสั่ง sudo systemctl enable mosquitto.service เพื่อในการทำ Moaquitto เริ่มทำงานอัตโนมัติ เมื่อ Raspberry Pi เริ่มทำงาน
+
+<p align="center">
+  <img src="photo/2_1/3.PNG" alt="3" width="900" height="200"/>
+</p>
+
+##### ใส่ password เป็น 0
+#####  หลังจากนั้น ใช้คำสั่ง sudo nano mosquitto.conf เข้าไฟล์ nano
+
+<p align="center">
+  <img src="photo/2_1/4.PNG" alt="4" width="800" height="400"/>
+</p>
+
+##### หลังจากเข้า  file มาแล้วให้เพิ่ม
+
+```C+
+allow_anonymous false
+password_file /etc/mosquitto/passwd
+```
+
+<p align="center">
+  <img src="photo/2_1/5.PNG" alt="5" width="800" height="400"/>
+</p>
+
+##### ดังรูป
+##### เสร็จแล้วทำการ CTRL+X เพื่อ Exit แล้วกด Y เพื่อ save หลังจากนั้น ใช้ sudo reboot เพื่อ reboot เมื่อ reboot ให้เข้าไปที่ terminal ทำการ test ด้วยคำสั่ง 
+
+```C+
+mosquitto_sub -d -t testTopic และ 
+mosquitto_pub -d -t testTopic -m "Hello world!"
+```
+##### โดยแยกเป็น 2 หน้าต่าง terminal
+
+<p align="center">
+  <img src="photo/2_1/6.PNG" alt="6" width="900" height="400"/>
+</p>
+
+##### ผลลัพธ์ที่ได้
+
+<p align="center">
+  <img src="photo/2_1/7.PNG" alt="7" width="800" height="900"/>
+</p>
+
