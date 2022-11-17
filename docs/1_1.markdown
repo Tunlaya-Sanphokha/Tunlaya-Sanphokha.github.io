@@ -1,1 +1,157 @@
+## Install/run Raspberry Os in Virtual machin(VM) 
+###### เริ่มจาก Download RPi OS Desktop image และ  Download install VirtualBox 
+<p align="center">
+  <img src="photo/1_1/1.PNG" alt="1" width="700" height="500"/>
+</p>
+เว็บที่ใช้ในการ Download 
+
+#### [Raspberry Pi](https://www.raspberrypi.com/software/)
+
+<p align="center">
+  <img src="photo/1_1/2.PNG" alt="2" width="700" height="500"/>
+</p>
+เว็บที่ใช้ในการ Download
+
+#### [Virtualbox](https://www.virtualbox.org/wiki/Downloads)
+###### Configure a new virtual machine for RPi OS เลือก ชนิด Linux และรุ่น Debian(64-bit) และเลือกขนาด ของหน่วยจำให้มากกว่า1024MBจะเท่าไหร่ก็ได้พอเลือกได้แล้วกด “ถัดไป”
+<p align="center">
+  <img src="photo/1_1/3.PNG" alt="3" width="700" height="500"/>
+</p>
+
+###### เลือก”ฮาร์ดดิสก์เสมือนขึ้นมาใหม่” แล้วกด”สร้าง” แล้ว เลือก “VDI(VirtualBox Disk Image)” แล้วกด “ถัดไป”
+
+<p align="center">
+  <img src="photo/1_1/4.PNG" alt="4" width="700" height="500"/>
+</p>
+
+###### เลือก “จัดสรรแบบพลวัต” แล้วกด “ถัดไป” และ ตั้งค่าที่อยู่และขนาดไฟล์ตามต้องการ พอเสร็จให้กด”สร้าง”
+
+<p align="center">
+  <img src="photo/1_1/5.PNG" alt="5" width="700" height="500"/>
+</p>?
+
+###### สุดท้ายจะได้หน้าอย่างนี้
+
+<p align="center">
+  <img src="photo/1_1/6.PNG" alt="6" width="700" height="500"/>
+</p>
+
+###### Add the RPi OS image to your VM ให้กดเข้าไปที่ “การตั้งค่า”
+
+<p align="center">
+  <img src="photo/1_1/7.PNG" alt="7" width="700" height="500"/>
+</p>
+
+###### ไปเมนู หน่วยเก็บข้อมูล กดเข้าไปที่ “ว่าง”ด้านล่างตัวควบคุมIDE ไปตรงออปคิคัสไดร์ฟ กดเครื่องหมายวงกลมสีฟ้า เลือกตัวที่ดาวโหลดมาRPi OS Desktop image
+
+<p align="center">
+  <img src="photo/1_1/8.PNG" alt="8" width="700" height="500"/>
+</p>
+
+###### Start and install the OS on the VM แล้ว เลือก Graphical installแล้ว enter
+
+<p align="center">
+  <img src="photo/1_1/9.PNG" alt="9" width="700" height="500"/>
+</p>
+
+###### เลือกภาษาตามต้องการ แล้วกด continue
+
+<p align="center">
+  <img src="photo/1_1/10.PNG" alt="10" width="700" height="500"/>
+</p>
+
+###### เลือก Guided - use entire disk แล้วกด continue
+
+<p align="center">
+  <img src="photo/1_1/11.PNG" alt="11" width="700" height="500"/>
+</p>
+
+###### เลือกdisk แล้ว continue
+
+<p align="center">
+  <img src="photo/1_1/12.PNG" alt="12" width="700" height="500"/>
+</p>
+
+###### เลือก all files in one parition (recommended for new users)แล้วกด continue
+
+<p align="center">
+  <img src="photo/1_1/13.PNG" alt="13" width="700" height="500"/>
+</p>
+
+###### เลือก Finish paritioning and write changes to disk แล้วกด continue
+
+<p align="center">
+  <img src="photo/1_1/14.PNG" alt="14" width="700" height="500"/>
+</p>
+
+###### กดเลือก Yes แล้ว Continue
+
+<p align="center">
+  <img src="photo/1_1/15.PNG" alt="15" width="700" height="500"/>
+</p>
+
+###### กดเลือก Yes แล้ว Continue
+
+<p align="center">
+  <img src="photo/1_1/16.PNG" alt="16" width="700" height="500"/>
+</p>
+
+###### เลือก device แล้ว Continue
+
+<p align="center">
+  <img src="photo/1_1/17.PNG" alt="17" width="700" height="500"/>
+</p>
+
+###### กด continue
+
+<p align="center">
+  <img src="photo/1_1/18.PNG" alt="18" width="700" height="500"/>
+</p>
+
+###### ตั้งค่า Country,language และtimezoneตามความต้องการ ทำเครื่องหมายถูก ทั้งสองตัวเลือกแล้วกด Next
+
+<p align="center">
+  <img src="photo/1_1/19.PNG" alt="19" width="700" height="500"/>
+</p>
+
+###### สร้างUser ตั้งUsernameและpassword ตั้งเสร็จแล้วกด Next
+
+<p align="center">
+  <img src="photo/1_1/20.PNG" alt="20" width="700" height="500"/>
+</p>
+
+###### กด Next เพื่อยืนยันการUpdate Software
+
+<p align="center">
+  <img src="photo/1_1/21.PNG" alt="21" width="700" height="500"/>
+</p>
+
+###### พอเสร็จแล้วจะมันถามว่าRestartไหม กดRestart เท่ากับจบขั้นตอนการติดตั้งสามารถใช้ได้แล้ว
+
+<p align="center">
+  <img src="photo/1_1/22.PNG" alt="22" width="700" height="500"/>
+</p>
+
+<p align="center">
+  <img src="photo/1_1/23.PNG" alt="23" width="700" height="500"/>
+</p>
+
+<p align="center">
+  <img src="photo/1_1/24.PNG" alt="24" width="700" height="500"/>
+</p>
+
+###### เมื่อลองใช้คำสั่ง ls
+
+<p align="center">
+  <img src="photo/1_1/25.PNG" alt="25" width="700" height="500"/>
+</p>
+
+###### การติดตั้ง  Raspberry Pi Imager ใช้คำสั่ง sudo apt install rpi-imager  เป็นการ install on Raspberry Pi OS  ใน Terminal Window
+
+<p align="center">
+  <img src="photo/1_1/26.PNG" alt="26" width="700" height="500"/>
+</p>
+
+######  เมื่อเราได้หน้าตาแบบนี้ แสดงว่า เสร็จสิ้น
+
 
