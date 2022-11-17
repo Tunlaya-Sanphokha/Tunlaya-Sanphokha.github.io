@@ -22,3 +22,4 @@
 ### [ Install/run Raspberry OS (Raspbian) in VM using Oracle VirtualBox](https://tunlaya-sanphokha.github.io/1_1.html)
 ### [ Install Raspberry OS on a MicroSD card and use Bord RPi](https://tunlaya-sanphokha.github.io/1_2.html)
 ### [Install/run Mosquitto broker using Linux VM ](https://tunlaya-sanphokha.github.io/2_1.html) 
+### [Install/run Mosquitto broker using RPi hardware](https://tunlaya-sanphokha.github.io/2_2.html)
