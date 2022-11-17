@@ -1,1 +1,19 @@
 ## Install/run Mosquitto broker using RPi hardware
+##### หลังจากที่เราลอง install Raspberry Pi OS ลง MicorSD แล้วได้ลอง ตั้งค่าและใช้บอร์ด Raspberry Pi hardware เบื้องต้นแล้ว
+##### ครั้งนี้เราจะลองใช้ บอร์ด Raspberry Pi เชื่อมต่อกัย จอ Computer  
+##### ทำการเสียบสาย HDMI Video Capture เข้ากับตัวบอร์ด  Raspberry pi เสียบเข้ากับช่อง USB ในตัว Computer 
+##### ดังรูป 
+
+<p align="center">
+  <img src="photo/2_2/1.PNG" alt="1" width="500" height="500"/>
+</p>
+
+#####  เนื่องจากเราไม่มี จอ Computer จึงใช้ App Camera แทน 
+##### เมื่อเข้าไปที่ App Camera แล้ว กด สลับ กล้อง จะมองเห็น  Raspberry pi os ที่เป็น Video Capture จากตัวบอร์ด Raspberry pi 
+
+<p align="center">
+  <img src="photo/2_2/2.PNG" alt="2" width="700" height="500"/>
+</p>
+
+##### ซึ่งเราสามารถใช้งาน บอร์ด Raspberry Pi เหมือนเครื่องคอมพิวเตอร์ เครื่องนึงได้ 
+##### โดยการ เสียบ แป้นพิมพ์ คีย์บอร์ด เข้ากับตัวบอร์ด Raspberry Pi และ เสียบ เม้าส์ เข้ากับ ตัวบอร์ด Raspberry Pi  
