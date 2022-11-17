@@ -1,1 +1,63 @@
+## Install Raspberry OS on a MicroSD card and use Bord RPi
+#### เว็บอ้างอิง [IOT-Kmutnb](https://iot-kmutnb.github.io/blogs/rpi/rpi4b_headless/)
+### การเริ่มต้นใช้งานบอร์ด Raspberry Pi(64-bit)
+ให้เตรียมอุปกรณ์ เพื่อใช้งาน บอร์ด Raspberry Pi 
+##### ขั้นตอนการเริ่มจ้นใช้งาน บอร์ด Raspberry Pi
+##### 1.เตรียมอุปกรณ์ฮาร์ดแวร์ ได้แก่
+###### -เลือกใช้บอร์ด RPi 4 Model B (หรือจะเป็นรุ่น RPi 3 Model B/B+ ก็ได้)
+###### -อุปกรณ์แปลงไฟฟ้า AC-DC Adapter ที่มีเอาต์พุต 5V / 3W สำหรับบอร์ด RPi และมีคอนเนกเตอร์แบบ USB Type-C สำหรับจ่ายไฟ
+###### -การ์ดหน่วยความจำ MicroSD คลาส 10 (หรือดีกว่า) มีความจุขั้นต่ำ 8GB
+###### -อุปกรณ์ USB Memory Card Reader สำหรับการเขียนหรืออ่านการ์ดหน่วยความจำ MicroSD ผ่านทางพอร์ต USB (ถ้าคอมพิวเตอร์ผู้ใช้ ไม่มีอุปกรณ์แบบ built-in)
+###### -สาย LAN ในกรณีที่เชื่อมต่อเข้ากับระบบเครือข่ายด้วย Ethernet
+##### 2.ดาวน์โหลดไฟล์ Raspberry OS Image (64-bit) เช่น สำหรับ RPi 
+##### 3.ติดตั้งไฟล์ Raspberry Pi OS Image ลงในการ์ดหน่วยความจำ และสามารถใช้ซอฟต์แวร์ Raspberry Pi Imager สำหรับขั้นตอนนี้
+##### 4.เสียบการ์ดหน่วยความจำที่ได้มีการติดตั้ง Raspberry Pi OS ไว้แล้ว และป้อนแรงดันไฟเลี้ยงจากอุปกรณ์ 5V Adapter เข้ากับคอนเนกเตอร์ USB Type-C ของบอร์ด เพื่อให้ RPi เริ่มต้นบูทระบบ
+##### 5.ตรวจสอบการเชื่อมต่อการทำงานของบอร์ด RPi เข้ากับระบบเครือข่าย LAN / WLAN เพื่อทราบหมายเลขแอดเดรสของบอร์ด (IP Address) ที่ได้รับมาโดยอัตโนมัติจาก DHCP Server ในระบบเครือข่าย
 
+เราจำทำการ Download Software ที่เป็น OS Images  สำหรับบอร์ด RPi
+###### เว็บของ [Raspberry Pi](https://www.raspberrypi.com/software/operating-systems/)
+###### เว็บที่ใช้ [Os Images](https://www.raspberrypi.com/software/)
+เข้าไปที่เว็บไซต์ แล้วทำการ Download Raspberry Pi imager
+<p align="center">
+  <img src="photo/1_2/1.PNG" alt="1" width="800" height="500"/>
+</p>
+
+เมื่อเราทำการ load ไฟล์ Raspberry Pi Imager มาแล้วเราจะได้ไฟล์ .img และ img.xz เมื่อเราเข้าไปที่ Raspberry Pi Imager สำหรับ Window จะได้หน้าต่างแบบนี้
+<p align="center">
+  <img src="photo/1_2/2.PNG" alt="2" width="800" height="500"/>
+</p>
+ให้เราเข้าไปที่ Operating System เลือกคำสั่ง Choose Os ให้เลือกที่ Use Custom แล้วเลือกไฟล์ .img หรือ img.xz ที่ดาวน์โหลดมาแล้ว 
+<p align="center">
+  <img src="photo/1_2/3.PNG" alt="3" width="800" height="500"/>
+</p>
+<p align="center">
+  <img src="photo/1_2/4.PNG" alt="4" width="800" height="500"/>
+</p>
+ทำการเลือกไฟล์ .img  หรือ img.xz
+เมื่อเลือกไฟล์แล้ว ให้เลือกอุปกรณ์ที่เราจะเขียนข้อมูลลงไป ซึ่งก็คือ การ์ดหน่วยความจำ(microSD) ที่เสียบอยู่กับ คอมพิวเตอร์ของเราอยู่ แล้วให้เลือก อุปกรณ์ที่จะเขียนลงไป 
+หลังจากนั้นเราจะมาที่ Advanced Opations 
+<p align="center">
+  <img src="photo/1_2/5.PNG" alt="5" width="800" height="500"/>
+</p>
+หน้านี้เราจะทำการตั้งค่า ชื่อผู้ใช้ และรหัสผ่านต่างๆ ซึ่งเราจะตั้งค่า การเชื่อมต่อสำหรับระบบเครือข่าย Wi-Fi ของเราด้วย
+<p align="center">
+  <img src="photo/1_2/6.PNG" alt="6" width="800" height="500"/>
+</p>
+เมื่อเราได้ทำการเลือก ไฟล์ Os Imager แล้วจะเลือกอุปกรณ์ที่จะเขียนข้อมูล ซึ่งก็คือ การ์ดหน่วยความจำ (microSD) ในรูปเนื่องจาก ผู้ใช้ได้ถอด micro SD ออกแล้วจึงไม่มีให้เลือก
+
+###### การเข้าบูทระบบและเข้าใช้ด้วย SSH
+<p align="center">
+  <img src="photo/1_2/7.PNG" alt="7" width="800" height="500"/>
+</p>
+ตัวอย่างการเข้าใช้งาน SSH client และทำคำสั่ง ping (ไปยังคอมพิวเตอร์ที่ทำหน้าที่เป็น Public DNS Server) เพื่อทดสอบการเชื่อมต่อกับอินเทอร์เน็ตจากบอร์ด RPi  
+ตัวอย่าง การคำสั่งแบบ Command Line ผ่านทาง SSH Console / Bash Shell เช่นคำสั่ง uname  เป็นคำสั่งตรวจสอบและแสดงเวอร์ชั่นของ Linux Kernel และชื่อ สภาปัตยกรรมของซีพียู
+หลังจากที่เราได้ตั้งต่าแล้วทำตามตัวอย่าง เสร็จแล้ว เมื่อนำ MicroSD มาเสียบเข้าที่ตัว Raspberry Pi
+<p align="center">
+  <img src="photo/1_2/8.PNG" alt="8" width="800" height="500"/>
+</p>
+จะเห็นได้ว่า มีการเชื่อมฮอตสปอตอยู่ 3 จุด ซึ่ง2 จุดเป็น คอมพิวเตอร์ที่ใช้ทำงาน และอีก1 จุดเป็นของ Rasberry pi ที่เชื่อมต่อ    
+<p align="center">
+  <img src="photo/1_2/9.PNG" alt="9" width="800" height="500"/>
+</p>
+การเข้าใช้งาน เมนูคำสั่งต่างๆ ของ raspi-config 
+หากต้องการเข้าใช้งาน RealVNC Server(พอร์ต 5900)  เพื่อให้สามารถเข้าใช้งาน RPi แบบ  Remote Desktop ก็ให้ไปที่เมนู Interface Option แล้วเลือก VNC แล้วตั้งค่าเพื่อเปิดการใช้งาน
