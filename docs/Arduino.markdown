@@ -204,3 +204,5 @@ delay(700);
 
 ### ตัวอย่างของ LED แต่ละ pattern
 <iframe width="700" height="500" src="https://www.youtube.com/embed/GFpAgs1QM8M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+#### [Go Home About Me](https://tunlaya-sanphokha.github.io/index.html)
