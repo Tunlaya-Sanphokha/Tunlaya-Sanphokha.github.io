@@ -17,3 +17,6 @@
 
 ##### ซึ่งเราสามารถใช้งาน บอร์ด Raspberry Pi เหมือนเครื่องคอมพิวเตอร์ เครื่องนึงได้ 
 ##### โดยการ เสียบ แป้นพิมพ์ คีย์บอร์ด เข้ากับตัวบอร์ด Raspberry Pi และ เสียบ เม้าส์ เข้ากับ ตัวบอร์ด Raspberry Pi  
+
+
+#### [Go Home About Me](https://tunlaya-sanphokha.github.io/index.html)
