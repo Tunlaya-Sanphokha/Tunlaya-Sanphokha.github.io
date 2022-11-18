@@ -61,3 +61,6 @@
 </p>
 การเข้าใช้งาน เมนูคำสั่งต่างๆ ของ raspi-config 
 หากต้องการเข้าใช้งาน RealVNC Server(พอร์ต 5900)  เพื่อให้สามารถเข้าใช้งาน RPi แบบ  Remote Desktop ก็ให้ไปที่เมนู Interface Option แล้วเลือก VNC แล้วตั้งค่าเพื่อเปิดการใช้งาน
+
+
+#### [Go Home About Me](https://tunlaya-sanphokha.github.io/index.html)
