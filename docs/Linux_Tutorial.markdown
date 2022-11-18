@@ -68,4 +68,5 @@ title: Linux Tutorial
   <img src="photo/HW1_Linux/9.testT.PNG" alt="9.testT" width="700" height="500"/>
 </p>
 
-#### [Home](https://tunlaya-sanphokha.github.io/index.html)
+
+#### [Go Home About Me](https://tunlaya-sanphokha.github.io/index.html)
