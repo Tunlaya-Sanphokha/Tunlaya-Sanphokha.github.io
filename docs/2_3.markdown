@@ -1,1 +1,76 @@
+## Install/run Mosquitto broker using Docker container using  Ubuntu VM 
+#### 1.เริ่มจากการ  uninstall Docker version เก่า ออกก่อน โดยใช้คำสั่งดังนี้
+```C+
+sudo apt-get remove docker docker-engine docker.io containerd runc
+```
+ก่อนการติดตั้ง Docker Engine ในครั้งแรก ต้องตั้งค่า repository ของ Docker ก่อน
+
+#### 2.อัพเดทแพคเกจแล้วทำการติดตั้ง repository
+```C+
+$ sudo apt-get update
+$ sudo apt-get install \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release
+```
+<p align="center">
+  <img src="photo/2_3/1.PNG" alt="1" width="700" height="500"/>
+</p>
+
+เพิ่ม GPG Key ของ Docker Official
+```C+
+$ sudo mkdir -p /etc/apt/keyrings
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
+```
+<p align="center">
+  <img src="photo/2_3/2.PNG" alt="2" width="800" height="100"/>
+</p>
+
+ตั้งค่า repository ด้วย command ด้านล่าง
+
+```C+
+$ echo \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+```
+<p align="center">
+  <img src="photo/2_3/3.PNG" alt="3" width="800" height="300"/>
+</p>
+
+#### 3.ติดตั้ง Docker Engine
+```C+
+$ sudo apt-get update
+$ sudo apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin
+```
+แสดงลิสต์ของ version ใน repository
+```C+
+$ apt-cache madison docker-ce
+```
+<p align="center">
+  <img src="photo/2_3/4.PNG" alt="4" width="700" height="500"/>
+</p>
+
+จากนั้นนำ String Version ของ Column บนสุด เช่น 5:20.10.18~3-0ubuntu-jammy แทนใน «VERSION_STRING»
+
+```C+
+$ sudo apt-get install docker-ce=<VERSION_STRING> docker-ce-cli=<VERSION_STRING> containerd.io docker-compose-plugin
+```
+
+<p align="center">
+  <img src="photo/2_3/5.PNG" alt="5" width="700" height="200"/>
+</p>
+
+#### 4.ติดตั้งเสร็จแล้ว ทำการทดลอง
+#### เมื่อทำการติดตั้ง เสร็จเรียบร้อยแล้ว ให้ทำการทดลองโดยใช้ Command ต่อไปนี้ 
+
+```C+
+$ sudo service docker start
+$ sudo docker run hello-world
+```
+<p align="center">
+  <img src="photo/2_3/6.PNG" alt="6" width="700" height="500"/>
+</p>
+
+เมื่อได้ผลลัพธ์ตามรูป การติดตั้ง Docker Engine เป็นอันเสร็จสิ้น
 
