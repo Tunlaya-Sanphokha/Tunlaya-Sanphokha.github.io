@@ -1,1 +1,75 @@
+##  Install/run Node-RED using Linux VM (Ubuntu or Rapbian OS distro) 
+######  Node-RED เป็นอินเทอร์เฟซการเขียนโปรแกรมด้วยภาพออกแบบมาเพื่อแนวคิด Internet of Things แทบไม่ต้องใช้ประสบการณ์ในการเขียนโค้ดเลยแม้แต่น้อยและทำให้ง่ายต่อการเชื่อมต่อสิ่งที่มีอยู่จริงกับระบบคลาวด์ เทคโนโลยีที่เกิดขึ้นใหม่ของไอบีเอ็มนี้ทำให้มนุษยชาติเข้าใกล้การแฮ็กโลกอีกขั้นหนึ่งตามความต้องการของเรา จัดหาเครื่องมือเพื่อทำให้กระบวนการนี้ยุ่งยากน้อยลงมาก
 
+
+##### 1)ในการติดตั้ง Node-RED ในเครื่อง คุณจะต้องมี Node.js เวอร์ชันที่รองรับในการรับเวอร์ชันนี้ คุณสามารถใช้ apt package manager รีเฟรชดัชนีแพ็คเกจในเครื่องของคุณก่อนโดยพิมพ์:
+
+```C+
+$ sudo apt update
+```
+<p align="center">
+  <img src="photo/3_1/1.PNG" alt="1" width="800" height="500"/>
+</p>
+
+จากนั้นติดตั้ง Node.js:
+
+```C+
+$ sudo apt install nodejs
+```
+<p align="center">
+  <img src="photo/3_1/2.PNG" alt="2" width="800" height="500"/>
+</p>
+
+ตรวจสอบว่าการติดตั้งสำเร็จโดยการสอบถามโหนดสำหรับหมายเลขรุ่น:
+
+```C+
+$  node -v
+```
+<p align="center">
+  <img src="photo/3_1/3.PNG" alt="3" width="400" height="100"/>
+</p>
+
+หากแพ็กเกจในที่เก็บเหมาะกับความต้องการของคุณ ทั้งหมดนี้คือสิ่งที่คุณต้องทำเพื่อตั้งค่า Node.js ในกรณีส่วนใหญ่ คุณจะต้องติดตั้ง npm ซึ่งเป็นตัวจัดการแพ็คเกจ Node.js ด้วย คุณสามารถทำได้โดยติดตั้งแพ็คเกจ npm ด้วย apt:
+
+```C+
+$ sudo apt install npm
+```
+
+<p align="center">
+  <img src="photo/3_1/4.PNG" alt="4" width="800" height="500"/>
+</p>
+
+สิ่งนี้จะช่วยให้คุณสามารถติดตั้งโมดูลและแพ็คเกจเพื่อใช้กับ Node.js ณ จุดนี้คุณได้ติดตั้ง Node.js และ npm สำเร็จโดยใช้ apt และที่เก็บซอฟต์แวร์เริ่มต้นของ Ubuntu 
+##### 2)ในการติดตั้ง Node-RED คุณสามารถใช้คำสั่ง npm ที่มาพร้อมกับ node.js:
+
+```C+
+$ sudo npm install -g --unsafe-perm node-red
+```
+<p align="center">
+  <img src="photo/3_1/5.PNG" alt="5" width="800" height="600"/>
+</p>
+
+ติดตั้งเสร็จก็ใช้คำสั่งนี้: 
+
+```C+
+$ node-red 
+```
+เพื่อเปิดข้อมูลnode-red
+
+<p align="center">
+  <img src="photo/3_1/6.PNG" alt="6" width="800" height="600"/>
+</p>
+
+จากนั้นคุณสามารถเรียกดู http://{host-ip}:1880 เพื่อรับเดสก์ท็อป Node-RED ที่คุ้นเคย
+
+<p align="center">
+  <img src="photo/3_1/7.PNG" alt="7" width="500" height="100"/>
+</p>
+
+หลังเขียนลงในเบราว์เซอร์ด้วย http://127.0.0.1:1880 ก็ขึ้นอย่างนี้
+
+<p align="center">
+  <img src="photo/3_1/8.PNG" alt="8" width="800" height="400"/>
+</p>
+
+#### [Home About Me](https://tunlaya-sanphokha.github.io//index.html)
