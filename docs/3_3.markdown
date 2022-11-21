@@ -7,14 +7,53 @@
 $  sudo docker run -it -p 1880:1880 -v node_red_data:/data --name mynodered nodered/node-red
 ```
 
-มาวิเคราะห์คำสั่ง:
-	 docker run -เรียกใช้คอนเทนเนอร์นี้ โดยเริ่มสร้างในเครื่องnecessary
-	 -it - แนบเทอร์มินัลเซสชันเพื่อให้เราเห็นว่าเกิดอะไรขึ้น
-	-p 1880:1880 - pคือpointerเชื่อมต่อพอร์ตภายในเครื่อง 1880 กับพอร์ตภายในที่เปิดเผย 1880
-	-v node_red_data:/data - ตั้ง docker named volume เรียก`node_red_data` ไปยังไดเร็กทอรีคอนเทนเนอร์ /data ดังนั้นการเปลี่ยนแปลงใดๆ ที่เกิดขึ้นกับโฟลว์จะยังคงอยู่
-	--name mynodered - ตั้งชื่อเครื่องนี้ให้เป็นกันเอง
-	nodered/node-red -อิมเมจที่ใช้เป็นฐาน - ปัจจุบัน Node-RED v3.0.2
+
+###### มาวิเคราะห์คำสั่ง:
+###### docker run -เรียกใช้คอนเทนเนอร์นี้ โดยเริ่มสร้างในเครื่องnecessary
+######	 -it - แนบเทอร์มินัลเซสชันเพื่อให้เราเห็นว่าเกิดอะไรขึ้น
+######	-p 1880:1880 - pคือpointerเชื่อมต่อพอร์ตภายในเครื่อง 1880 กับพอร์ตภายในที่เปิดเผย 1880
+######	-v node_red_data:/data - ตั้ง docker named volume เรียก`node_red_data` ไปยังไดเร็กทอรีคอนเทนเนอร์ /data ดังนั้นการเปลี่ยนแปลงใดๆ ที่เกิดขึ้นกับโฟลว์จะยังคงอยู่
+######	--name mynodered - ตั้งชื่อเครื่องนี้ให้เป็นกันเอง
+######	nodered/node-red -อิมเมจที่ใช้เป็นฐาน - ปัจจุบัน Node-RED v3.0.2
 
 <p align="center">
   <img src="photo/3_3/1.PNG" alt="8" width="800" height="400"/>
 </p>
+
+การรันคำสั่งนั้นควรให้หน้าต่าง terminal ที่มีอินสแตนซ์ Node-RED ทำงานอยู่
+
+<p align="center">
+  <img src="photo/3_3/2.PNG" alt="2" width="800" height="600"/>
+</p>
+
+จากนั้นคุณสามารถเรียกดู http://{host-ip}:1880 เพื่อรับเดสก์ท็อป Node-RED ที่คุ้นเคย
+
+<p align="center">
+  <img src="photo/3_3/3.PNG" alt="3" width="800" height="100"/>
+</p>
+
+หลังเขียนลงในเบราว์เซอร์ด้วย http://127.0.0.1:1880 ก็ขึ้นอย่างนี้
+<p align="center">
+  <img src="photo/3_3/4.PNG" alt="4" width="700" height="500"/>
+</p>
+
+<p align="center">
+  <img src="photo/3_3/5.PNG" alt="5" width="700" height="500"/>
+</p>
+
+หากเราพอใจกับสิ่งที่เราเห็น เราสามารถถอด terminal ด้วย Ctrl-p Ctrl-q - คอนเทนเนอร์จะทำงานต่อไปในพื้นหลัง
+หากต้องการเชื่อมต่อใหม่กับterminal (เพื่อดูการบันทึก) ให้รัน:
+
+```C+
+$ sudo docker attach mynodered
+```
+หากคุณต้องการรีสตาร์ทคอนเทนเนอร์ (เช่น หลังจากรีบูตหรือรีสตาร์ท Docker daemon):
+
+```C+
+$ sudo docker start mynodered
+```
+และหยุดอีกครั้งเมื่อต้องการ:
+
+```C+
+$ sudo docker stop mynodered\
+```
