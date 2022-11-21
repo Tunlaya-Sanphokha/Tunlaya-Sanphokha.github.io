@@ -1,1 +1,20 @@
+#  Install/run Node-RED using Docker container
+##### 1)install Docker container ซึ่งติดตั้งแล้วในหัวข้อที่ผ่านมา
 
+##### 2)install Node-red in docker :ในการรันใน Docker ในรูปแบบที่ง่ายที่สุด ให้รัน:โดยใช้คำสั่งนี้
+
+```C+
+$  sudo docker run -it -p 1880:1880 -v node_red_data:/data --name mynodered nodered/node-red
+```
+
+มาวิเคราะห์คำสั่ง:
+	 docker run -เรียกใช้คอนเทนเนอร์นี้ โดยเริ่มสร้างในเครื่องnecessary
+	 -it - แนบเทอร์มินัลเซสชันเพื่อให้เราเห็นว่าเกิดอะไรขึ้น
+	-p 1880:1880 - pคือpointerเชื่อมต่อพอร์ตภายในเครื่อง 1880 กับพอร์ตภายในที่เปิดเผย 1880
+	-v node_red_data:/data - ตั้ง docker named volume เรียก`node_red_data` ไปยังไดเร็กทอรีคอนเทนเนอร์ /data ดังนั้นการเปลี่ยนแปลงใดๆ ที่เกิดขึ้นกับโฟลว์จะยังคงอยู่
+	--name mynodered - ตั้งชื่อเครื่องนี้ให้เป็นกันเอง
+	nodered/node-red -อิมเมจที่ใช้เป็นฐาน - ปัจจุบัน Node-RED v3.0.2
+
+<p align="center">
+  <img src="photo/3_3/1.PNG" alt="8" width="800" height="400"/>
+</p>
