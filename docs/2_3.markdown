@@ -75,4 +75,4 @@ $ sudo docker run hello-world
 เมื่อได้ผลลัพธ์ตามรูป การติดตั้ง Docker Engine เป็นอันเสร็จสิ้น
 
 
-#### [Go Home About Me](https://tunlaya-sanphokha.github.io/index.html)
+#### [Home About Me](https://tunlaya-sanphokha.github.io/index.html)
