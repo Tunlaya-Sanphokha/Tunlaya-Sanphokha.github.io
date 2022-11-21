@@ -69,4 +69,4 @@ title: Linux Tutorial
 </p>
 
 
-#### [Go Home About Me](https://tunlaya-sanphokha.github.io/index.html)
+#### [Home About Me](https://tunlaya-sanphokha.github.io/index.html)
