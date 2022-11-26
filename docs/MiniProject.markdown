@@ -136,9 +136,10 @@ return 3
 <p align="center">
   <img src="photo/4/21.PNG" alt="21" width="600" height="400"/>
 </p>
- เมื่อทำการ  add Topic Subscription  จะแสดงค่า อุณหภูมิ และ ความชื้นสัมพัทธ์ ที่ DHT11 วัดได้
  
- ###### ภาพรวมทั้งหมดจะแสดงดังนี้ 
+ เมื่อทำการ  add Topic Subscription  จะแสดงค่า อุณหภูมิ และ ความชื้นสัมพัทธ์ ที่ DHT11 วัดได้
+
+###### ภาพรวมทั้งหมดจะแสดงดังนี้ 
  
  <p align="center">
   <img src="photo/4/22.PNG" alt="22" width="700" height="600"/>
