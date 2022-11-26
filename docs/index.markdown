@@ -27,4 +27,4 @@
 ### [ Install/run Node-RED using Linux VM](https://tunlaya-sanphokha.github.io/3_1.html)
 ### [Install/run Node-RED using Docker container](https://tunlaya-sanphokha.github.io/3_3.html)
 # MiNi Project
-### [MQTT กับ บอร์ดESP8266 ](https://tunlaya-sanphokha.girhub.io/4.html)
+### [MQTT กับบอร์ด ESP8266 ](https://tunlaya-sanphokha.github.io/4.html)
